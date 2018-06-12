@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-11T09:30:14.797Z</updated>
+  <updated>2018-06-12T10:40:08.350Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="http://yoursite.com/2018/06/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/06/12/我的第一篇博客/</id>
+    <published>2018-06-12T10:40:08.303Z</published>
+    <updated>2018-06-12T10:40:08.350Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用gitHub托管的静态博客。</p><p>采用了Hexo框架。</p><h2 id="hexo的常用命令已做备忘"><a href="#hexo的常用命令已做备忘" class="headerlink" title="hexo的常用命令已做备忘"></a>hexo的常用命令已做备忘</h2><h4 id="清理clean"><a href="#清理clean" class="headerlink" title="清理clean"></a>清理clean</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><h4 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><h4 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -d</span><br></pre></td></tr></table></figure><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用gitHub托管的静态博客。&lt;/p&gt;
+&lt;p&gt;采用了Hexo框架。&lt;/p&gt;
+&lt;h2 id=&quot;hexo的常用命令已做备忘&quot;&gt;&lt;a href=&quot;#hexo的常用命令已做备忘&quot; class=&quot;headerlink&quot; title=&quot;hexo的常用命令已做备忘&quot;&gt;&lt;/a&gt;hexo的
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql学习笔记</title>
+    <link href="http://yoursite.com/2018/06/12/Mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/06/12/Mysql学习笔记/</id>
+    <published>2018-06-12T10:36:52.251Z</published>
+    <updated>2018-06-12T10:36:52.334Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="数据库文件再Linux系统中的位置"><a href="#数据库文件再Linux系统中的位置" class="headerlink" title="数据库文件再Linux系统中的位置"></a>数据库文件再Linux系统中的位置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/var/lib/mysql</span><br></pre></td></tr></table></figure><h4 id="批量修改id"><a href="#批量修改id" class="headerlink" title="批量修改id"></a>批量修改id</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update table set id=id+9000</span><br></pre></td></tr></table></figure><p>如果执行了这个语句，例如id增加到了9999，但是当前的id可能正好也是9999，此时就会报错。</p><p>这时，可以执行如下语句，设置表格的当前自增主键的初始值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE   test</span><br><span class="line">(</span><br><span class="line">id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,</span><br><span class="line">username VARCHAR(15) NOT NULL</span><br><span class="line">)AUTO_INCREMENT = 100;</span><br></pre></td></tr></table></figure><p>或者，可在建表时可用“AUTO_INCREMENT=n”选项来指定一个自增的初始值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table tbname auto_increment = x ;</span><br></pre></td></tr></table></figure><h4 id="sql语句的内嵌函数举例"><a href="#sql语句的内嵌函数举例" class="headerlink" title="sql语句的内嵌函数举例"></a>sql语句的内嵌函数举例</h4><p>例如：mysql数据库按字段长度排序</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from student order by LENGTH(name)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;数据库文件再Linux系统中的位置&quot;&gt;&lt;a href=&quot;#数据库文件再Linux系统中的位置&quot; class=&quot;headerlink&quot; title=&quot;数据库文件再Linux系统中的位置&quot;&gt;&lt;/a&gt;数据库文件再Linux系统中的位置&lt;/h4&gt;&lt;figure class
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>增加Valine评论功能</title>
@@ -56,32 +108,6 @@
       
         &lt;p&gt;打开 Hexo 目录下的 \themes\next\ _config.yml 文件&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/spa
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博客</title>
-    <link href="http://yoursite.com/2018/06/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2018/06/08/我的第一篇博客/</id>
-    <published>2018-06-08T08:38:35.680Z</published>
-    <updated>2018-06-08T08:38:35.715Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用gitHub托管的静态博客。<br>采用了Hexo框架。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;使用gitHub托管的静态博客。&lt;br&gt;采用了Hexo框架。&lt;/p&gt;
-
       
     
     </summary>
