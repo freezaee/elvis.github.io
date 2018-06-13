@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-12T10:40:08.350Z</updated>
+  <updated>2018-06-13T03:58:32.876Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 格言</title>
+    <link href="http://yoursite.com/2018/06/13/Python%20%E6%A0%BC%E8%A8%80/"/>
+    <id>http://yoursite.com/2018/06/13/Python 格言/</id>
+    <published>2018-06-13T03:58:32.873Z</published>
+    <updated>2018-06-13T03:58:32.876Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="为了更好的了解-Python-哲学理念及设计思想，可以在任何一个-Python-交互解释器中输入“import-this”命令，就会出现一篇-Python-格言，描述了一系列-Python-的设计原则，阅读一下这些文字，对于我们深入了解-Python-有许多帮助："><a href="#为了更好的了解-Python-哲学理念及设计思想，可以在任何一个-Python-交互解释器中输入“import-this”命令，就会出现一篇-Python-格言，描述了一系列-Python-的设计原则，阅读一下这些文字，对于我们深入了解-Python-有许多帮助：" class="headerlink" title="为了更好的了解 Python 哲学理念及设计思想，可以在任何一个 Python 交互解释器中输入“import this”命令，就会出现一篇 Python 格言，描述了一系列 Python 的设计原则，阅读一下这些文字，对于我们深入了解 Python 有许多帮助："></a>为了更好的了解 Python 哲学理念及设计思想，可以在任何一个 Python 交互解释器中输入“import this”命令，就会出现一篇 Python 格言，描述了一系列 Python 的设计原则，阅读一下这些文字，对于我们深入了解 Python 有许多帮助：</h5><h4 id="The-Zen-of-Python-by-Tim-Peters"><a href="#The-Zen-of-Python-by-Tim-Peters" class="headerlink" title="The Zen of Python, by Tim Peters"></a>The Zen of Python, by Tim Peters</h4><p>The Zen of Python, by Tim Peters</p><p>Beautiful is better than ugly.</p><p>Explicit is better than implicit.</p><p>Simple is better than complex.</p><p>Complex is better than complicated.</p><p>Flat is better than nested.</p><p>Sparse is better than dense.</p><p>Readability counts.</p><p>Special cases aren’t special enough to break the rules.</p><p>Although practicality beats purity.</p><p>Errors should never pass silently.</p><p>Unless explicitly silenced.</p><p>In the face of ambiguity, refuse the temptation to guess.</p><p>There should be one– and preferably only one –obvious way to do it.</p><p>Although that way may not be obvious at first unless you’re Dutch.</p><p>Now is better than never.</p><p>Although never is often better than <em>right</em> now.</p><p>If the implementation is hard to explain, it’s a bad idea.</p><p>If the implementation is easy to explain, it may be a good idea.</p><p>Namespaces are one honking great idea — let’s do more of those!</p><h4 id="译文："><a href="#译文：" class="headerlink" title="译文："></a>译文：</h4><p>美丽优于丑陋。</p><p>清楚优于含糊。</p><p>简单优于复杂。</p><p>复杂优于繁琐。</p><p>平坦优于曲折。</p><p>宽松优于密集。</p><p>重要的是可读性。</p><p>特殊的案例不足以特殊到破坏规则。</p><p>尽管实践可以打破真理。</p><p>错误却不可置之不理。</p><p>除非另有明确要求。</p><p>面对模棱两可，拒绝猜测。</p><p>总会有一个 —— 最好是只有一个 —— 显而易见的方式来明辨。</p><p>哪怕这种方式在开始的时候可能并不明显 —— 除非你是荷兰人。</p><p>现在有比没有好。</p><p>尽管没有经常好于现在。</p><p>如果如何实现很难被解释清楚，那么这个想法就是一个坏想法。</p><p>如果如何实现可以被很好的解释，那么这是一个好想法。</p><p>命名空间就是一个非常好的想法 —— 让我们在这方面多做些工作吧!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;为了更好的了解-Python-哲学理念及设计思想，可以在任何一个-Python-交互解释器中输入“import-this”命令，就会出现一篇-Python-格言，描述了一系列-Python-的设计原则，阅读一下这些文字，对于我们深入了解-Python-有许多帮助：
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="其他" scheme="http://yoursite.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
   
   <entry>
     <title>我的第一篇博客</title>
