@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-23T02:51:40.297Z</updated>
+  <updated>2018-06-23T02:58:12.769Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>github博客个性化域名绑定</title>
     <link href="http://yoursite.com/2018/06/23/github%E5%8D%9A%E5%AE%A2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/"/>
     <id>http://yoursite.com/2018/06/23/github博客个性化域名绑定/</id>
-    <published>2018-06-23T02:51:40.294Z</published>
-    <updated>2018-06-23T02:51:40.297Z</updated>
+    <published>2018-06-23T02:58:12.746Z</published>
+    <updated>2018-06-23T02:58:12.769Z</updated>
     
     <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>最近买了一个域名，在github上创建的博客想要使用个人的域名来访问。这里记录使用我的二级域名绑定到我的博客的方法。即通过</p><p><a href="http://blog.freezaee.xyz/" target="_blank" rel="noopener">blog.freezaee.xyz</a></p><p>打开</p><p>freezaee.github.io</p><h4 id="设置域名"><a href="#设置域名" class="headerlink" title="设置域名"></a>设置域名</h4><p>我使用的是腾讯云。</p><p>在域名解析界面增加一条记录即可。</p><table><thead><tr><th>主机记录</th><th>记录类型</th><th>记录值</th></tr></thead><tbody><tr><td>blog</td><td>CNAME</td><td>freezaee.github.io</td></tr></tbody></table><p>其他默认即可。</p><p>这里CNAME和A的区别，简单理解就是，A表示address需要制定的是ip。</p><p>CNAME是别名，通过名称来制定地址，相对更灵活。例如，我这里通过freezaee.github.io指向我的博客地址。</p><h4 id="设置github"><a href="#设置github" class="headerlink" title="设置github"></a>设置github</h4><p>github上托管的博客项目（{username}.github.io）,的settings中，Custom domain设置为blog.freezaee.xyz</p><h4 id="Hexo设置"><a href="#Hexo设置" class="headerlink" title="Hexo设置"></a>Hexo设置</h4><p>在hexo的source目录下创建CNAME文件。注意要大写</p><p>在CNAME文件中输入域名，并保存。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blog.freezaee.xyz</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>生成并部署即可。</p><p>等待几分钟的时间，即可通过 blog.freezaee.xyz 访问了。</p>]]></content>
     
@@ -42,7 +42,7 @@
     
       <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
-      <category term="域名" scheme="http://yoursite.com/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="DNS" scheme="http://yoursite.com/tags/DNS/"/>
     
   </entry>
   
